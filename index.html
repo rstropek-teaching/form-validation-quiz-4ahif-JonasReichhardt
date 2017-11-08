@@ -37,7 +37,7 @@
             </div>
             <div class="form-group">
                 <label for="mediaChannelSelect">How did you hear from us?</label>
-                <select class="form-control" id="mediaChannelSelect">
+                <select class="form-control" id="mediaChannelSelect" onchange="changed()">
                     <option>Internet</option>
                     <option>Press</option>
                     <option>Other</option>
@@ -52,13 +52,14 @@
                     Subscribe to newsletter
                 </label>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" onclick="clicked()">Submit</button>
         </form>
     </div>
 
     <script src="jquery.js"></script>
     <script src="bootstrap.js"></script>
     <script src="index.js"></script>
+    <script>unload();</script>
 </body>
 
 </html>
